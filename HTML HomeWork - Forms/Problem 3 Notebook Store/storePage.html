@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--Много се заиграх с детаилите и кода стана много разхвърлен,
+	 ако имам време ще го пооправя преди да я предам -->
+	 
+	<meta charset="utf-8"/>
+	<title>
+		Problem 3 Notebook Store
+	</title>
+	<style>
+	a:link {
+		color: #0099CC;
+	}
+	body {
+		font-family: Trebuchet MS;
+	}
+	th.navigation {
+		font-size: 28pt;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	legend {
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	li {
+		padding: 25px 0px 0px 0px;
+	}
+	td.contentControl {
+		padding-top: 25%;
+	}
+	</style>
+	<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+	    var currentValue = $('#minPriceSliderVal');
+
+	    $('#minPrice').change(function(){
+	        currentValue.html(this.value);
+	    });
+
+	    // Trigger the event on load, so
+	    // the value field is populated:
+
+	    $('#minPrice').change();
+		});
+
+		$(function(){
+
+	    var currentValue = $('#maxPriceSliderVal');
+
+	    $('#maxPrice').change(function(){
+	        currentValue.html(this.value);
+	    });
+
+	    // Trigger the event on load, so
+	    // the value field is populated:
+
+	    $('#maxPrice').change();
+
+		});
+
+		$(function(){
+
+	    var currentValue = $('#minRamSliderVal');
+
+	    $('#minRam').change(function(){
+	        currentValue.html(this.value);
+	    });
+
+	    // Trigger the event on load, so
+	    // the value field is populated:
+
+	    $('#minRam').change();
+
+		});
+
+		$(function(){
+
+	    var currentValue = $('#maxRamSliderVal');
+
+	    $('#maxRam').change(function(){
+	        currentValue.html(this.value);
+	    });
+
+	    // Trigger the event on load, so
+	    // the value field is populated:
+
+	    $('#maxRam').change();
+
+		});
+	</script>
+</head>
+<body>
+	<table style=" margin: auto; border-style:solid; border-radius: 15px 25px; border-spacing: 0pt;">
+		<thead > 
+			<tr>
+				<th class="navigation" colspan="2">
+					<a href="#" title="Apple">Apple</a>
+					<a href="#" title="Toshiba">Toshiba</a>
+					<a href="#" title="Lenovo">Lenovo</a>
+					<a href="#" title="Dell">Dell</a>
+					<a href="#" title="Asus">Asus</a>
+					<a href="#" title="Hacer">Hacer</a>
+					<a href="#" title="HP">HP</a>											
+				</th>	
+			</tr>	
+		</thead>		
+			<tbody>
+				<tr>
+					<td style="border-style:hidden; border-top-style: solid; padding: 1%;">
+						<table id="secondTable" style="border-style: solid; padding: 1%; font-size:18pt">
+							<tbody>
+								<tr>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>	
+								</tr>
+								<tr>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>
+									<td>
+										<fieldset style="border-style:4px solid;">
+											<legend>Apple MacBook Air</legend>
+											<table style="text-align: center;">
+												<tbody>
+													<tr>
+														<td>
+															<img src="notebook.jpg" alt="notebook" 
+														style="width:200px; margin-right:20px; margin-top:0px" />
+														</td>
+														<td>
+															<ul>
+																<li>320GB SSD</li>
+																<li>8GB DDR3</li>
+																<li>Intel Core i5</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2"><strong>800$</strong></td>
+													</tr>
+												</tbody>
+											</table>
+										</fieldset>
+									</td>	
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td style="border-top-style: solid; padding: 5px;">
+						<table style="text-align: center; font-size: 18pt;">
+							<tbody>
+								<tr>
+									<td class="contentControl">
+										<form method="get" action="apply-now.php">
+										<label for="minPrice">Min Price:</label><span id="minPriceSliderVal">200</span>$<br />	
+										<input id="minPrice" type="range" min="0" max="1000" value="200" step="10" style="width:300px;" />
+										</form>
+									</td>
+								</tr>
+								<tr>
+									<td class="contentControl">
+										<form method="get" action="apply-now.php">
+										<label for="maxPrice">Max Price:</label><span id="maxPriceSliderVal">700</span>$<br />	
+										<input id="maxPrice" type="range" min="0" max="1000" value="700" step="10" style="width:300px;" />
+										</form>
+									</td>
+								</tr>
+								<tr>
+									<td class="contentControl">
+										<form method="get" action="apply-now.php">
+										<label for="minRam">Min Ram:</label><span id="minRamSliderVal">4</span>GB<br />	
+										<input id="minRam" type="range" min="2" max="64" value="4" step="2" style="width:300px;" />
+										</form>
+									</td>
+								</tr>
+								<tr>
+									<td class="contentControl">
+										<form method="get" action="apply-now.php">
+										<label for="maxRam">Max Ram:</label><span id="maxRamSliderVal">8</span>GB<br />	
+										<input id="maxRam" type="range" min="2" max="64" value="8" step="2" style="width:300px;" />
+										</form>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+	</table>		
+</body>
+</html>

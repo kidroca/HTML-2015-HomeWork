@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>
+		Problem 3 LinkedIn
+	</title>
+	<style type="text/css">
+		body {
+		font-size: 14pt;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			padding: 5px;
+			text-align: right;
+		}
+		table.sign {
+			border-style: solid;
+		}
+		input {
+			width: 200px;
+			height: 20px;
+			font-size: 14pt;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>LinkedIn</h1>
+		<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">What is LinkedIn?</a></li>
+			<li><a href="#">Join Today</a></li>
+			<li><form id="login">Sign In
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<span>Email:</span>
+									<input id="email" type="email" form="login" placeholder="myLogin@linkedin.com" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>Password:</span>
+									<input id="password" type="password" form="login" placeholder="********" />
+								</td>	
+							</tr>
+						</tbody>	
+					</table>
+			</form></li>
+		</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>
+			Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities
+		</h1>
+			<p>Stay informed about your contacts industry</p>
+				<p>Find the people & knowledge you need to achieve your goals</p>
+				<p>Control your proffesional identity online</p>
+	</main>
+
+	<section>
+		<h3 style="margin-bottom: auto;">Sign Up</h3>
+		<form id="signUp">
+			<table class="sign">
+				<tbody>
+					<tr>
+						<td>
+							First Name
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" form="signUp" id="fName"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Last Name
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" form="signUp" id="lName"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Email
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="email" form="signUp" id="signUpEmail" placeholder="email@website.com" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Password
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="password" form="signUp" id="signUpPassword" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							*6 or more characters
+						</td>
+					</tr>			
+				</tbody>
+			</table>
+			<button style="width:100px; height:30px;" form="signUp">Join</button>
+		</form>	
+		<p>Already on LinkedIn? <a href="#">Sign In</a></p>
+	</section>
+	<footer>
+		<hr />
+		<h3>Search for Someone by Name:</h3>
+		<form id="search">
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<span>Email:</span>
+									<input id="searchName" type="text" form="login" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>Password:</span>
+									<input id="searchLastName" type="text" form="login" />
+								</td>	
+							</tr>
+						</tbody>	
+					</table>
+			</form>
+	</footer>
+
+</body>
+</html>

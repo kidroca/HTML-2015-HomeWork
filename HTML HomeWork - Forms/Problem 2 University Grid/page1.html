@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>University Grid Page 1</title>
+	<style type="text/css">
+		table {
+			margin: auto;
+			font-size: 18pt;
+			border-style: solid;
+			border-collapse: collapse;
+
+		}
+		th {
+			padding: 10px;
+			border: 5px solid;	
+		}
+		td {
+			padding: 10px;
+			border-style: solid;
+		}
+		tfoot {
+			border: 5px solid;
+		}
+	</style>
+</head>
+
+	<!--Групирал съм полетата в таблицата със атрибута class , за да се ориентирам по - лесно кое какво съдържа.
+	 Не зная дали е правилно така. Понеже, id="" трябва да е уникално, пробвах с name="" ,обаче, валидатора ми каза
+	  че не е редно да присвоявам атрибут name на таг от типа td , tr и така... -->
+
+<body>
+	<table id="schoolGrid" title="University Grid">
+		<thead>
+			<tr>
+				<th rowspan="2">Order</th>
+				<th colspan="3">Personal Info</th>
+				<th colspan="5">University Marks</th>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Faculty Number</th>
+				<th>English</th>
+				<th>Math</th>
+				<th>Biology</th>
+				<th>Physics</th>
+				<th>Total</th>
+			</tr>
+		</thead>
+		<tbody> 
+			<tr class="rowBegin">
+				<td class="order">1</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">2</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">3</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">4</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">5</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">6</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">7</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">8</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">9</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+			<tr class="rowBegin">
+				<td class="order">10</td>
+				<td class="Name">Pesho</td>
+				<td class="lastName">Yordanov</td>
+				<td class="facultyNumber">123456</td>
+				<td class="scoreEnglish">2</td>
+				<td class="scoreMath">3</td>
+				<td class="scoreBiology">4</td>
+				<td class="scorePhysics">5</td>
+				<th class="total">3.50</th>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="9">
+					<form id="gridNavigation">
+						<input id="prevButton" type="button" value="Previous" style="font-size: 16pt" onclick="location.href='#'" />
+						<a href="page1.html">1</a>
+						<a href="page2.html">2</a>
+						<a href="page3.html">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<input id="nextButton" type="button" value="Next" style="font-size: 16pt" onclick="location.href='page2.html'" />
+					</form>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'm a fake calculator</title>
+</head>
+
+<body bgcolor="#FFFFF0">
+<p>&nbsp;</p>
+	<form>
+		<table border="10" bgcolor="silver" align="center">
+			<tbody align="center" style="font-size: 16pt">
+				<tr id="result">
+					<td><input type="number" style="width: 600px; height:40px; font-size: 16pt; background-color: #F0F8FF; text-align: right" readonly="readonly" value="0100" /></td>
+				</tr>
+				<tr id="binaryData">
+					<td >
+						<table border="3" style="width: 610px" cellpadding="1" cellspacing="1">
+							<tbody align="center">
+								<tr>
+									<td>
+										<pre>0000  0000  0000  0000  0000  0000  0000  0000</pre>
+										<pre>0000  0000  0000  0000  0000  0000  0000  0000</pre>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<tr id="calcButtons">
+					<td>
+						<table border="0" cellpadding="3" cellspacing="5" style="width: 600px">
+								<tbody align="center">
+								<tr>
+									<td></td>
+								</tr>
+								<tr id="1">
+									<td colspan="2" rowspan="3">
+										<table align="left" border="1" cellspacing="0" style="width: 110px; height: 150px">
+											<tbody>
+												<tr>
+													<td>
+														<table id="numericSystems"  align="left">
+															<tbody align="left">
+																<tr>
+																	<td>
+																		<input id="Hex" type="radio" name="numSys">
+																		<label for="Hex">Hex</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Dec" type="radio" checked="checked" name="numSys" >
+																		<label for="Dec">Dec</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Oct" type="radio"  name="numSys">
+																		<label for="Oct">Oct</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Bin" type="radio"  name="numSys">
+																		<label for="Bin">Bin</label>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>	
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: Transparent;">&nbsp;</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Mod</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">A</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">MC</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">MR</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">MS</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">M+</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">M-</button>
+									</td>
+								</tr>
+								<tr id="2">
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">(</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">)</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">B</button>
+									</td>
+									<td style="font-size: 16pt ">
+										<button style="width: 50px; height: 40px; ">&#8592;</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; ">CE</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; ">C</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">&#177;</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">&radic;</button>
+									</td>
+								</tr>
+								<tr id="3">	
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">RoL</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">RoR</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">C</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px;">7</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">8</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">9</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px">/</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">%</button>
+									</td>
+								</tr>
+								<tr id="4">
+									<td colspan="2" rowspan="3">
+										<table align="left" border="1" cellspacing="0" style="width: 110px; height: 150px">
+											<tbody>
+												<tr>
+													<td>
+														<table>
+															<tbody align="left">
+																<tr>
+																	<td>
+																		<input id="Qword" type="radio" name="size" checked="checked" />
+																		<label for="Qword">Qword</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Dword" type="radio" name="size" />
+																		<label for="Dword">Dword</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Word" type="radio" name="size" />
+																		<label for="Word">Word</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input id="Byte" type="radio" name="size" />
+																		<label for="Byte">Byte</label>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Or</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Xor</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">D</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">4</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">5</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">6</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px">*</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">1/x</button>
+									</td>
+								</tr>
+								<tr id="5">
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Lsh</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Rsh</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">E</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">1</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">2</button>
+									</td>
+									<td >
+										<button style="width: 50px; height: 40px">3</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px">-</button>
+									</td>
+									<td rowspan="2">
+										<button style="width: 50px; height: 100px; font-size: 12pt"><b>=</b></button>
+									</td>
+								</tr>
+								<tr id="6">
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">Not</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">And</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px; background-color: #A6A6A6;">F</button>
+									</td>
+									<td  colspan="2" >
+										<button style="width: 115px; height: 40px">0</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px">,</button>
+									</td>
+									<td>
+										<button style="width: 50px; height: 40px">+</button>
+									</td>
+								</tr>
+								<tfoot>
+									<tr>
+										<td>
+										</td>
+									</tr>
+								</tfoot>
+						</table>
+					</td>
+				</tr>
+			</tbody>				
+		</table>
+	</form>
+</body>
+</html>
